@@ -282,17 +282,17 @@ void replacement4(int num,int counter,char char1,char char2,key_pos ref1,keyboar
         }
     }
     
-    cout << layout[array_pos[1].row][array_pos[1].col] << "-->"<< layout[array_pos[0].row][array_pos[0].col] << " ";
+    //cout << layout[array_pos[1].row][array_pos[1].col] << "-->"<< layout[array_pos[0].row][array_pos[0].col] << " ";
     
-    cout << layout[array_pos[0].row][array_pos[0].col] << "-->"<< layout[array_pos[counter].row][array_pos[counter].col] << " ";
+    //cout << layout[array_pos[0].row][array_pos[0].col] << "-->"<< layout[array_pos[counter].row][array_pos[counter].col] << " ";
     
     for (int i=counter;i>0;i--){
         if ((i-1)>0){
-            cout<<layout[array_pos[counter].row][array_pos[counter].col]<<"-->"<<layout[array_pos[i-1].row][array_pos[i-1].col]<<" ";
+            //cout<<layout[array_pos[counter].row][array_pos[counter].col]<<"-->"<<layout[array_pos[i-1].row][array_pos[i-1].col]<<" ";
         }
         swap(array_pos[counter],array_pos[i-1]);
     }
-    cout << endl;
+    //cout << endl;
     int num2 = num-counter-1;
     if (num2>1){
         find_mismatch4(final_layout,num2,order);
