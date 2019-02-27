@@ -238,11 +238,11 @@ int combination_order(keyboard final_layout,int num, string order){
             char char1 = layout[Row][Col];
             char char2 = final_layout.layout[Row][Col];
             key_pos ref1(Row,Col);
-            cout<<"keyboard_layout_set_"+to_string(k)+": \n";
+            //cout<<"keyboard_layout_set_"+to_string(k)+": \n";
             replacement4(num,counter,char1,char2,ref1,final_layout,order);
             //file_create(k);
             k++;
-            print_layout();
+            //print_layout();
         }
     }
     return k-1;
